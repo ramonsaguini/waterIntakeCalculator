@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Water Calculation</title>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <form id="waterForm">
+                <label for="name">Name:</label><br>
+                <input type="text" placeholder="Name" id="name" required>
+                <br>
+                <label for="weight">Weight (in kilograms):</label> <br>
+                <input type="number" placeholder="Kgs" id="weight" required>
+                <br>
+                <button type="button" onclick="checkLts()">Calculate</button>
+                <button type="button" onclick="clearF()">Clear</button>
+
+            </form> <br>
+            <div id="res">Fill the form Please!!</div>
+            <p style="text-align: center; font-size: 20px; color: greenyellow;" ><strong>$%^& Copyright © Ramon Andrade $%^&</strong></p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
