@@ -1,14 +1,14 @@
 function checkLts() {
        const name = document.getElementById('name').value;
        const weight = parseFloat(document.getElementById('weight').value);
-       const waterIntakePerKg = 0.033; 
+       const calc = 0.033; 
 
        if (isNaN(weight)) {
            alert('Please enter a valid weight.');
            return;
        }
-       const waterPLiters = (weight * waterIntakePerKg).toFixed(2);
-       document.getElementById('res').innerHTML = `${name} you should drink approximately ${waterPLiters} liters of water/day.`;
+       const calcPL = (weight * calc).toFixed(2);
+       document.getElementById('res').innerHTML = `${name} you should drink approximately ${calcPL} liters of water/day.`;
 }
 
 function clearF(){
